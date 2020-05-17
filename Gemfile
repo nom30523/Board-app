@@ -37,6 +37,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'mini_racer'
 gem 'jquery-rails'
 gem 'kaminari'
+gem 'rails-i18n'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
