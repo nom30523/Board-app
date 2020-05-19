@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'users/new'
-  get 'users/create'
-  get 'users/me'
-  get 'sessions/create'
-  get 'sessions/destroy'
+  get 'mypage', to: 'users#me'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   root 'boards#index'
+  resources :users, only: %i[new create]
   resources :boards, except: %i[index]
   resources :comments, only: %i[create destroy]
 end
