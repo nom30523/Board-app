@@ -8,6 +8,10 @@ ja:
       comment:
         name: 名前
         comment: コメント
+      user:
+        name: ユーザー名
+        password: パスワード
+        password_confirmation: パスワード（確認）
   time:
     formats:
       default: "%Y/%m/%d %H:%M"
